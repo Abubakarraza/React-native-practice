@@ -7,7 +7,7 @@ import {
   Button,
   SafeAreaView,
 } from 'react-native';
-const list = () => {
+const List = () => {
   const [status, setStatus] = useState(true);
   const student = [
     {
@@ -64,7 +64,7 @@ const list = () => {
     </SafeAreaView>
   );
 };
-export default list;
+export default List;
 const style = StyleSheet.create({
   design: {
     height: 100,
