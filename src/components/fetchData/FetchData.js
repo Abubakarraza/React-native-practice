@@ -23,7 +23,6 @@ const FetchData = () => {
       const res = await datas.json();
       setData(res.products);
       setLoaded(false);
-      console.log('data:', res.products);
     } catch (error) {
       console.log(error);
     }

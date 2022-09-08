@@ -6,7 +6,9 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
+  KeyboardAvoidingView,
   Alert,
+  Button,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 const LoginPage = ({navigation}) => {
@@ -24,6 +26,7 @@ const LoginPage = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../../assests/wlogo.png')} />
+
       <TextInput
         placeholder="Enter Email"
         value={email}
@@ -43,6 +46,7 @@ const LoginPage = ({navigation}) => {
         multiline={false}
         autoCorrect={false}
       />
+
       <View style={styles.wrapper}>
         <CheckBox value={agree} onChange={() => setAgree(!agree)} />
         <Text>I agree terms and condition</Text>

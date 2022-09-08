@@ -13,23 +13,15 @@ import Home from './src/components/home/Home';
 import About from './src/components/about/About';
 import Contact from './src/components/contact/Contact';
 import UserData from './src/components/userData/UserData';
+import BottomNav from './src/components/bottomNav/BottomNav';
+import {View} from 'react-native';
+import BottomNavigation from './src/navigation/bottomNavigation/BottomNavigation';
+import OtherNavigation from './src/navigation/otherNavigation/OtherNavigation';
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen
-          name="Login"
-          component={LoginPage}
-          options={{title: 'Login Page'}}
-        />
-        <Stack.Screen name="List" component={ProductList} />
-        <Stack.Screen name="Random" component={RandomColorGenerator} />
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
-        <Stack.Screen name="User" component={UserData} />
-        <Stack.Screen name="Contact" component={Contact} />
-      </Stack.Navigator>
+      <BottomNavigation />
     </NavigationContainer>
   );
 };

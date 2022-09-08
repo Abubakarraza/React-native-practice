@@ -1,8 +1,10 @@
 import React from 'react';
 import {View, StyleSheet, Text, Button, Image, ScrollView} from 'react-native';
 
-import BotttomNav from '../bottomNav/BotttomNav';
+import BotttomMenu from '../bottomMenu/BotttomMenu';
+import Icon from 'react-native-vector-icons/AntDesign';
 const Home = ({navigation}) => {
+  const myIcon = <Icon name="home" size={30} color="#900" />;
   const description =
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry';
   return (
@@ -13,12 +15,14 @@ const Home = ({navigation}) => {
             style={styles.image}
             source={require('../../assests/fsdd.jpg')}
           />
-          <Text style={styles.text}>Welcome to Faisalabad</Text>
+          <Text style={styles.text}>
+            Welcome to Faisalabad <Icon name="home" size={30} color="#900" />
+          </Text>
           <Text style={styles.description}>{description}</Text>
         </View>
-        <View style={styles.nav}>
+        {/* <View style={styles.nav}>
           <View style={styles.line}></View>
-          <BotttomNav />
+          <BotttomMenu />
           <View
             style={[
               styles.line,
@@ -26,7 +30,7 @@ const Home = ({navigation}) => {
                 marginBottom: 15,
               },
             ]}></View>
-        </View>
+        </View> */}
       </View>
     </ScrollView>
   );
