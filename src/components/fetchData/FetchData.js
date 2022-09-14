@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
   img: {
     height: 230,
     width: '100%',
+    borderRadius: 12,
   },
   subParent: {
     position: 'relative',

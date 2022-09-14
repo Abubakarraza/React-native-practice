@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   container: {
     margin: 10,
     paddingBottom: 80,
+    marginBottom: 80,
   },
   btn: {
     alignItems: 'center',
